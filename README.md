@@ -1,5 +1,5 @@
-## ADS-portfolio Maarten de Jonge 
-# Student number 17113571
+# ADS-portfolio Maarten de Jonge 
+## Student number 17113571
 
 # DataCamp Course
 From the DataCamp Courses, I completed the following:
