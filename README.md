@@ -1,4 +1,5 @@
-## ADS-portfolio Maarten de Jonge Student number 17113571
+## ADS-portfolio Maarten de Jonge 
+# Student number 17113571
 
 # DataCamp Course
 From the DataCamp Courses, I completed the following:
@@ -10,7 +11,48 @@ Screenshots of the statements of accomplishment can be found here [#insert link]
 
 # Reflection and Evaluation
 - own contribution
+situations:
+  paper
+several chapters in the paper
+several presentations
+research feature engineering audio files
+binary models
+several linear and convolutional NN's (eventually unused)
+Meetings and (good) ideas
+Research
+Data exploration
+Data preparation
+Data visualisation
+big picture planning of the minor
+solving bugs or other issues whenever asked
+Vast nog wel iets
+
+
+Early on in the minor, my task was researching which machine learning algorithms could be used on audio recognition, how to use them and what was common practice in the field of data science. For most machine learning (not deep learning) algoritms it is nescessary to identify and engineer features for the model to use in training. 
+After reading several articles, papers, websites, etc. I found no information on extracting features from eating sounds. Most instead opted for deep learning. 
+After this, I made some visualisations of the data (waveform and spectrogram) and could not distinguish any clear commonalities between different positive samples.
+I then decided that we should first try a neural network.
+When I talked to the other groups using audio (emotions and dialogue), I heard that they were able to use spectrograms and MFCC's to create identifying features for different people/emotions. In one of the weekly meetings, one of the teachers also said MFCC's might help solve this problem.
+After hearing this, I decided to try the same, but this did not lead to any usable data. It seemed that eating sounds were too differrent from speech to use the same methods.
+After I relayed this to my group, we decided to focus on deep learning over machine learning, to circumvent the need for feature extraction by humans.
+
+At several occasions while working together, a group member complained about a bug in their code or some other problem. Most of these times, I was able to fix or lessen the problem quickly.
+
+I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
+A more detailed description of my contribution to the paper can be found in Communication - writing paper.
+
+Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. We noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to improve the results of our project.
+I made binary classifier models to distinguish eating vs not eating, drinking vs not drinking and eating and drinking vs neither. [insert links to notebooks]
+The binary models to distinguish only eating were comparable to the multiclass classifiers in terms of accuracy and comparable or sometimes slightly better in terms of precision. The binary models for only drinking performed consistently slightly worse than both the multiclass classifiers and the other binary models. The binary model to distinguish eating or drinking vs neither performed only slightly worse than the only eating binary classifier.
+[This was a clear indication that eating sounds differ enough from drinking sounds to alter the performance of a model.]
+
 - learning objectives
+Data science skills/knowledge
+Working in a team
+Using Scrum properly
+
+
+
 - group project as a whole
 
 # Research Project
@@ -22,8 +64,10 @@ Furthermore, after talking with the problem owner, we decided to define "optimal
 The reason accuracy was chosen as the leading metric despite the wish for high precision, was that focussing on accuracy during training resulted in a better overall model.
 
 - evaluation
-In future studies about this problem, I would advise more research into applying binary classifiers. We unfortunately didn't have enough time to spend on this avenue until the very end of the project, due to the fact that we only had half of our initial group for most of the project.
-Despite not spending much time and effort though, the binary models were quite promising and certain binary classifiers even outperformed their multiclass classifier equivalents in certain specific metrics.
+In future studies about this problem, I would advise more research into applying binary classifiers. Our group decided to focus on multiclass classifiers after initial experimentation in both binary and multiclass classifiers. This would have the teddy need only a single model instead of two. 
+Later in the project, however, we decided to revisit the binary classifier idea. The resulting models were quite promising and certain binary classifiers even outperformed their multiclass classifier equivalents in certain specific metrics.
+[We unfortunately didn't have enough time to spend on this avenue until the very end of the project, due to the fact that we only had half of our initial group for most of the project.]
+I recommend taking several different splits between training/validation/test sets to see if the results are not caused by unrepresentative data in the test set.
 [insert more recommendations here]
 
 - conclusions
@@ -33,6 +77,8 @@ Unfortunately our best individual result was with a ResNet transfer learning mod
 
 - planning
 Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with over a hundred total tickets.
+At several moments during the minor, I sensed a lull was coming up due to some group members not knowing their tasks. In several of these moments, I called for an extra meeting to discuss our plans for the rest of the minor.
+Our planning being agile due to scrum caused the group to deviate from these plans several times, but the overview of current tasks was appreciated by all group members.
 
 [insert link to scrum board]
 
@@ -51,6 +97,29 @@ Our group has used Scrum in the planning of this project. We made a Scrum board 
 
 - explanation of terminology, jargon, definitions
 [Collect a list of words and explain them I guess]
+Machine Learning
+Deep Learning
+Back propagation
+Features
+feature engineering
+epoch
+(validation) loss
+accuracy
+precision
+recall
+confusion matrix
+model
+dropout
+activation function
+linear layer
+convolution
+Neural Network
+overfitting
+underfitting
+regression
+forest
+crossentropy
+
 
 
 # Data Preprocessing
@@ -68,6 +137,7 @@ Later, during data enhancement, more background noises were even added to make t
 - data preparation
 After the initial exploration of the dataset, we noticed the positive samples for both eating and drinking made up only a small percentage of the dataset. We decided to enlarge the amount of samples using data augmentation. To ensure the models would train on the data, not the augmentations, the same enhancements were performed on the negative samples.
 This work was largely done by Florian, with me providing help where asked.
+
 
 - data explanation
 The dataset consists of audio files taken from Google databases (mostly YouTube). Since most of these files were at a length of approximately 10 seconds, all files were made to be exactly 10 seconds long.
