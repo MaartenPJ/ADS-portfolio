@@ -15,15 +15,15 @@ several chapters in the paper\
 several presentations\
 research feature engineering audio files\
 binary models\
-several linear and convolutional NN's (eventually unused)
+several linear and convolutional NN's (eventually unused)\
 Meetings and (good) ideas\
 Research\
 Data exploration\
-Data preparation
-Data visualisation
-big picture planning of the minor
-solving bugs or other issues whenever asked
-Vast nog wel iets
+Data preparationX
+Data visualisation\
+big picture planning of the minor\
+solving bugs or other issues whenever asked\
+Vast nog wel iets [ja wat dan]
 
 
 Early on in the minor, my task was researching which machine learning algorithms could be used on audio recognition, how to use them and what was common practice in the field of data science. For most machine learning (not deep learning) algoritms it is nescessary to identify and engineer features for the model to use in training. 
@@ -58,13 +58,24 @@ I did research into several data science-related topics. A list of articles I re
 
 Data exploration consisted of several different actions: looking at the amount of samples, the distribution of labels among samples, listening to the individual audio fragments, creating waveforms and spectrograms of them, studying those images for patterns and/or irregularities, verifying that the samples were correctly labeled, etc. I performed several of these actions for each of the considered datasets. (Over all datasets combined, I performed all of these actions)
 
+I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts]
+
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
 A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
 - learning objectives
 Data science skills/knowledge
+Situation:
+I was interested in data science, but had little knowledge and skills on the subject.
+Task:
+Expand my knowledge on the subject and improve my skills.
+Action:
+Read many articles online, researching the best methods to tackle the problems I encountered. Attend lectures about the subjects. Speak with teachers and peers. Practice relevant programming exercises (e.g. DataCamp, notebooks). Work on the assignment give to me by the problem owner (identifying eating and drinking sounds from audio using machine/deep learning)
+Result:
+After reading articles, looking at examples of how other research groups attempted to solve similar problems, I learned not only how to program a neural network that can recognise specific sounds, but also how to structure such a project and after attempting several things myself and with other members of my group, I also learned what things to try. I think if I were to start another similar project, I would have a much easier time, due to the skills I have acquired in the last few months.
+
+Improving (Python) programming skills
 Working in a team
-Using Scrum properly
 
 
 
