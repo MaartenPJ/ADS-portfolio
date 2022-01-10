@@ -11,14 +11,12 @@ Screenshots of the statements of accomplishment can be found here [#insert link]
 
 # Reflection and Evaluation
 - own contribution
-situations:
-  paper
-several chapters in the paper
-several presentations
-research feature engineering audio files
-binary models
+several chapters in the paper\
+several presentations\
+research feature engineering audio files\
+binary models\
 several linear and convolutional NN's (eventually unused)
-Meetings and (good) ideas
+Meetings and (good) ideas\
 Research
 Data exploration
 Data preparation
@@ -36,10 +34,6 @@ When I talked to the other groups using audio (emotions and dialogue), I heard t
 After hearing this, I decided to try the same, but this did not lead to any usable data. It seemed that eating sounds were too differrent from speech to use the same methods.
 After I relayed this to my group, we decided to focus on deep learning over machine learning, to circumvent the need for feature extraction by humans.
 
-At several occasions while working together, a group member complained about a bug in their code or some other problem. Most of these times, I was able to fix or lessen the problem quickly.
-
-I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
-A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
 Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. There were three reasons for doing this. 
 Firstly we noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to eliminate (some of) these errors and improve the results of our project.
@@ -50,7 +44,20 @@ To keep consistency between the binary and multiclass models, I used almost the 
 The binary models to distinguish only eating were comparable to the multiclass classifiers in terms of accuracy and comparable or sometimes slightly better in terms of precision. The binary models for only drinking performed consistently slightly worse than both the multiclass classifiers and the other binary models. The binary model to distinguish eating or drinking vs neither performed only slightly worse than the only eating binary classifier.
 The fact that recognising drinking performed the worst out of the binary models corresponds to the results of the multiclass classifiers, which also usually performed better on eating than drinking. This implies that, at least for our dataset, drinking sounds are inherently more difficult to classify than eating sounds.
 Because the results for eating were on average comparable to the multiclass classifiers, the results for drinking were consistently worse and there had already been a lot of work put in to the multiclass models, we decided not to pursue the binary models any further as a final product.
-[This was a clear indication that eating sounds differ enough from drinking sounds to alter the performance of a model.]
+
+
+I experimented with several different models (mainly neural networks). The goal of these experiments was mostly to further my own understanding of how to make a model.
+[These models scored slightly lower than another model that one of my group members made around the same time, so it was decided not to continue working on this version.]
+
+
+At several occasions while working together, a group member complained about a bug in their code or some other problem. Most of these times, I was able to help fix or lessen the problem quickly.
+I played a part in the meetings the group had. These include internal meetings, meetings with teachers, meetings with the problem owner and meetings with other project groups.
+I took the lead at several times to ensure a good planning and equal division of tasks for all members of the group.
+
+I did research into several data science-related topics. A list of articles I read can be found here [insert link] [Existing research on audio recognition and eating sounds in particular, general information on making/training/learning models]
+
+I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
+A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
 - learning objectives
 Data science skills/knowledge
@@ -60,6 +67,8 @@ Using Scrum properly
 
 
 - group project as a whole
+
+
 
 # Research Project
 - task definition
