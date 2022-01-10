@@ -151,9 +151,10 @@ Unfortunately our best individual result was with a ResNet transfer learning mod
 [more here]
 
 - planning
-Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with over a hundred total tickets.
-At several moments during the minor, I sensed a lull was coming up due to some group members not knowing their tasks. In several of these moments, I called for an extra meeting to discuss our plans for the rest of the minor.
+Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with over a hundred [echte aantal] total tickets.
+At several moments during the minor, I sensed a lull was coming up [phrasing, manmanman] due to some group members not knowing their tasks. In several of these moments, I called for an extra meeting to discuss our plans for the rest of the minor.
 Our planning being agile due to scrum caused the group to deviate from these plans several times, but the overview of current tasks was appreciated by all group members.
+Although the aim was to use Scrum for everything related to the project, sometimes an issue was discussed and then quickly resolved, without it ever reaching the Jira board.
 
 [insert link to scrum board]
 
