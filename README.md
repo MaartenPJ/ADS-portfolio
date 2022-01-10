@@ -17,8 +17,8 @@ research feature engineering audio files\
 binary models\
 several linear and convolutional NN's (eventually unused)
 Meetings and (good) ideas\
-Research
-Data exploration
+Research\
+Data exploration\
 Data preparation
 Data visualisation
 big picture planning of the minor
@@ -55,6 +55,8 @@ I played a part in the meetings the group had. These include internal meetings, 
 I took the lead at several times to ensure a good planning and equal division of tasks for all members of the group.
 
 I did research into several data science-related topics. A list of articles I read can be found here [insert link] [Existing research on audio recognition and eating sounds in particular, general information on making/training/learning models]
+
+Data exploration consisted of several different actions: looking at the amount of samples, the distribution of labels among samples, listening to the individual audio fragments, creating waveforms and spectrograms of them, studying those images for patterns and/or irregularities, verifying that the samples were correctly labeled, etc. I performed several of these actions for each of the considered datasets. (Over all datasets combined, I performed all of these actions)
 
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
 A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
@@ -142,7 +144,7 @@ crossentropy
 [Find and reference all python files/notebooks used for data visualisation]
 [describe how you explored the data]
 [describe early hypotheses]
-In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds (recognisable and comparable bands in spectrograms)[insert references to a spectrogram with these bands]. This strengthened our confidence, that our assignment was indeed possible.
+In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds (recognisable and comparable bands in spectrograms)[insert references to a spectrogram with these bands]. This strengthened our confidence, that our assignment [recognising these sounds] was indeed possible.
 
 - data cleansing
 The data was not cleaned, because we were not certain what we were looking for, so passing it through for example a low-pass noise reduction filter could remove the relevant identifiers the models should be looking for.
