@@ -64,7 +64,7 @@ I wrote a significant part of the final paper and I presented (parts of) 5 prese
 A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
 - learning objectives
-Data science skills/knowledge
+Learning Objective: Acquire data science skills/knowledge
 Situation:
 I was interested in data science, but had little knowledge and skills on the subject.
 Task:
@@ -72,14 +72,61 @@ Expand my knowledge on the subject and improve my skills.
 Action:
 Read many articles online, researching the best methods to tackle the problems I encountered. Attend lectures about the subjects. Speak with teachers and peers. Practice relevant programming exercises (e.g. DataCamp, notebooks). Work on the assignment give to me by the problem owner (identifying eating and drinking sounds from audio using machine/deep learning)
 Result:
-After reading articles, looking at examples of how other research groups attempted to solve similar problems, I learned not only how to program a neural network that can recognise specific sounds, but also how to structure such a project and after attempting several things myself and with other members of my group, I also learned what things to try. I think if I were to start another similar project, I would have a much easier time, due to the skills I have acquired in the last few months.
+After reading articles, looking at examples of how other research groups attempted to solve similar problems, I learned not only how to program a neural network that can recognise specific sounds, but also how to structure such a project and after attempting several things myself and with other members of my group, I also learned what things to try and where to put priorities.
+Reflection:
+I think if I were to start another similar project, I would have a much easier time, due to the skills I have acquired in the last few months.
+I am satisfied with the amount I have learned. I have contributed at least in part on every aspect of the final product and understand not only which choices were made, but also why they were made.
+However, over the course of the minor I have been hindered several times by health-related issues. If this hadn't been the case, I would have liked to play and experiment with the subject matter more, instead of only doing what was required of me.
 
-Improving (Python) programming skills
-Working in a team
 
+Learning Objective: Improving (Python) programming skills
+Situation:
+I had already finished several physics-related courses in my major, which required some programming in Python. I wished to improve and polish my skills by doing a minor that was more computer science-related.
+Task:
+Practicing with Python and learning new features and conventions.
+Action:
+Programming several Python scripts over the course of the 18-week minor and following the courses on DataCamp
+Result:
+I learned many things Python can be used for, which I hadn't encountered before, even in modules I had used in previous situations like matplotlib and pandas.
+I also became faster at planning and coding programs by practicing.
+Reflection:
+I am happy to see, that, even though I had not done too much programming in the past few years, I quickly got into the programming mindset. I programmed several different types of scripts/programs and was able to learn new skills rather quickly. This also allowed me to help the other members in my team with troubleshooting errors and bugs (even the computer science students).
+I will certainly have use of my acquired skills in further study and my later job.
+
+
+Learning Objective: Working in a team
+Situation:
+This minor required me to work in an international, multidisciplinary team to work on the project. I have worked in several different teams in the past with varying levels of efficiency and cooperation.
+Task:
+From the start of the minor, I was determined to try to take an active role in ensuring the tasks were planned ahead properly and the work was divided equally among the members of the group.
+Action:
+From the beginning, I insisted on meeting physically multiple times per week to discuss progress and planning and to ensure everyone was up to date on decisions being made. I also at certain points initiated an extra meeting if I noticed or suspected that the group was not functioning properly.
+I also made a point of communicating changes that would affect the work of other members immediately.
+Result:
+The team finished every task in time and almost every major decision was first discussed and weighed. I played my part in this project team and contributed not only my own knowledge on the subject matter, but also my communications skills, which I acquired elsewhere.
+Reflection:
+I experienced the teamwork as pleasant during almost every part of the minor. I took an active role in the discussions whenever I thought my input would be relevant, but also tried not to come off as too dominant a person.
+I think I can use the experiences from this team to my benefit in any future teams I will be a part of.
 
 
 - group project as a whole
+At the start 3 people didnt show up, then 2 of those did, then 1 left, then another left.
+Only half the intended group size.
+Teachers advised us to prioritise due to this and not try to explore every possible avenue.
+First few weeks lot of individual working without much collaborating or vision of the goal.
+
+After several weeks, the group started meeting and discussing more in-depth and efficiently. 
+We communicated more about new discoveries and insights and changes in plans. This lead to a pleasant working environment.
+The communication was very open throughout the minor.
+Even though all group members came from different countries, there were little to no language-related barriers in communication.
+
+I am satisfied with the results of the project. The final model is not perfect, but likely good enough for the purposes of the problem owner. Also I believe it is the best we could have done considering the assignment and the fact there were only 3 people for most of the project.
+
+[talk more about my role in all this maybe?]
+
+Situation:
+As a part of his Smart Teddy project, 
+Task:
 
 
 
