@@ -39,14 +39,17 @@ After I relayed this to my group, we decided to focus on deep learning over mach
 At several occasions while working together, a group member complained about a bug in their code or some other problem. Most of these times, I was able to fix or lessen the problem quickly.
 
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
-A more detailed description of my contribution to the paper can be found in Communication - writing paper.
+A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
 Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. There were three reasons for doing this. 
-Firstly we noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to improve the results of our project.
-Secondly it may happen (especially during an actual meal) that eating and drinking sounds occur in the same sample. If you want to keep track of both eating and drinking, detecting them with separate models will work better in such a case. Also there is no telling what result a multiclass classifier would give then.
+Firstly we noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to eliminate (some of) these errors and improve the results of our project.
+Secondly it may happen that eating and drinking sounds occur in the same sample. If you want to keep track of both eating and drinking separately, detecting them with separate models will work better. Also there is no telling what result a multiclass classifier would give for such a sample.
 The third reason was scientific curiosity.
 I made binary classifier models to distinguish eating vs not eating, drinking vs not drinking and eating and drinking vs neither. [insert links to notebooks]
+To keep consistency between the binary and multiclass models, I used almost the same code as Florian to load in and label the data, replacing certain variables as nescessary.
 The binary models to distinguish only eating were comparable to the multiclass classifiers in terms of accuracy and comparable or sometimes slightly better in terms of precision. The binary models for only drinking performed consistently slightly worse than both the multiclass classifiers and the other binary models. The binary model to distinguish eating or drinking vs neither performed only slightly worse than the only eating binary classifier.
+The fact that recognising drinking performed the worst out of the binary models corresponds to the results of the multiclass classifiers, which also usually performed better on eating than drinking. This implies that, at least for our dataset, drinking sounds are inherently more difficult to classify than eating sounds.
+Because the results for eating were on average comparable to the multiclass classifiers, the results for drinking were consistently worse and there had already been a lot of work put in to the multiclass models, we decided not to pursue the binary models any further as a final product.
 [This was a clear indication that eating sounds differ enough from drinking sounds to alter the performance of a model.]
 
 - learning objectives
