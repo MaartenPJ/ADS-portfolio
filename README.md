@@ -41,7 +41,10 @@ At several occasions while working together, a group member complained about a b
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
 A more detailed description of my contribution to the paper can be found in Communication - writing paper.
 
-Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. We noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to improve the results of our project.
+Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. There were three reasons for doing this. 
+Firstly we noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to improve the results of our project.
+Secondly it may happen (especially during an actual meal) that eating and drinking sounds occur in the same sample. If you want to keep track of both eating and drinking, detecting them with separate models will work better in such a case. Also there is no telling what result a multiclass classifier would give then.
+The third reason was scientific curiosity.
 I made binary classifier models to distinguish eating vs not eating, drinking vs not drinking and eating and drinking vs neither. [insert links to notebooks]
 The binary models to distinguish only eating were comparable to the multiclass classifiers in terms of accuracy and comparable or sometimes slightly better in terms of precision. The binary models for only drinking performed consistently slightly worse than both the multiclass classifiers and the other binary models. The binary model to distinguish eating or drinking vs neither performed only slightly worse than the only eating binary classifier.
 [This was a clear indication that eating sounds differ enough from drinking sounds to alter the performance of a model.]
