@@ -11,7 +11,7 @@ Screenshots of the statements of accomplishment can be found here [#insert link]
 
 # 2 Reflection and Evaluation
 ## 2.1 Reflection on own contribution to the project
-several chapters in the paper\;
+several chapters in the paper\
 several presentations\
 research feature engineering audio files\
 binary models\
