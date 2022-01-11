@@ -221,6 +221,16 @@ The name of the dataset used is Google AudioSet. [insert link to audioset] It co
 
 
 - data visualisation
+In order to better understand the nature of our datasets, several types of data visualisation were employed, losted below with example scripts.
+To understand the dataset as a whole, we made:
+Histogram of labels [link]
+To get more insight into individual datapoints, the following transformations were performed 
+Converting to waveform [link]
+Converting to MFCC [link]
+Converting to (mel)spectrogram [link]
+The visualisations were done mostly using [libraries] MatPlotLib, Librosa and TorchAudio and pandas was used for reading in data.
+
+
 
 # Communication
 - presentations
