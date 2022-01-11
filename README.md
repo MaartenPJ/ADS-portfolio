@@ -11,7 +11,7 @@ Screenshots of the statements of accomplishment can be found here [#insert link]
 
 # 2 Reflection and Evaluation
 ## 2.1 Reflection on own contribution to the project
-several chapters in the paper\
+several chapters in the paper\;
 several presentations\
 research feature engineering audio files\
 binary models\
@@ -25,26 +25,57 @@ big picture planning of the minor\
 solving bugs or other issues whenever asked\
 Vast nog wel iets [ja wat dan]
 
+Exploring machine learning for classifying audio data:
 
-Early on in the minor, my task was researching which machine learning algorithms could be used on audio recognition, how to use them and what was common practice in the field of data science. For most machine learning (not deep learning) algoritms it is nescessary to identify and engineer features for the model to use in training. 
-After reading several articles, papers, websites, etc. [links to articles?] I found no information on extracting features from eating sounds. Most instead opted for deep learning. 
+Situation:
+A model needed to be chosen.
+
+Task:
+Early on in the minor, my task was researching which machine learning algorithms could be used on audio recognition, how to use them and what was common practice in the field of data science. 
+
+Action:
+For most machine learning (not deep learning) algoritms it is nescessary to identify and engineer features for the model to use in training. 
+After reading several articles, papers and websites. [links to articles?] I found no information on extracting features from eating sounds. Most instead opted for deep learning. 
 After this, I made some visualisations of the data (waveform and spectrogram) and could not distinguish any clear commonalities between different positive samples.
 I then decided that we should first try a neural network.
-When I talked to the other groups using audio (emotions and dialogue), I heard that they were able to use spectrograms and MFCC's to create identifying features for different people/emotions. In one of the weekly meetings, one of the teachers also said MFCC's might help solve this problem.
-After hearing this, I decided to try the same, but this did not lead to any usable data. It seemed that eating sounds were too differrent from speech to use the same methods.
+I talked to the other groups using audio (emotions and dialogue). I heard that they were able to use spectrograms and MFCC's to create identifying features for different people/emotions. In one of the weekly meetings, one of the teachers also said MFCC's might help solve this problem.
+After hearing this, I decided to try the same, but this did not lead to any more usable data. 
+
+Result:
+It seemed that eating sounds were too different from speech to use the same methods.
 After I relayed this to my group, we decided to focus on deep learning over machine learning, to circumvent the need for feature extraction by humans.
 
+Reflection:
+I think using deep learning was the right choice. After seeing the final results of other groups, they also moved to deep learning later in the project, because it gave better results.
+I think that recognising early on, that feature engineering is difficult for eating sounds, has saved the group a lot of work, that might have been for nothing.
 
-Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. There were three reasons for doing this. 
+
+
+Binary classifiers:
+
+Situation:
+There were three reasons for making binary classifiers.
 Firstly we noticed a significant percentage of samples in our validation and test sets was misclassified between eating and drinking. I reasoned training a model on only eating or drinking sounds, not both, was a possible way to eliminate (some of) these errors and improve the results of our project.
 Secondly it may happen that eating and drinking sounds occur in the same sample. If you want to keep track of both eating and drinking separately, detecting them with separate models will work better. Also there is no telling what result a multiclass classifier would give for such a sample.
 The third reason was scientific curiosity.
+
+Task:
+Make binary classifiers, that are similar to the existing multiclass classifiers. Compare the results of both.
+
+Action:
+Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models. 
 I made binary classifier models to distinguish eating vs not eating, drinking vs not drinking and eating and drinking vs neither. [insert links to notebooks]
 To keep consistency between the binary and multiclass models, I used almost the same code as Florian to load in and label the data, replacing certain variables as nescessary.
+
+Results:
 The binary models to distinguish only eating were comparable to the multiclass classifiers in terms of accuracy and comparable or sometimes slightly better in terms of precision. The binary models for only drinking performed consistently slightly worse than both the multiclass classifiers and the other binary models. The binary model to distinguish eating or drinking vs neither performed only slightly worse than the only eating binary classifier.
 The fact that recognising drinking performed the worst out of the binary models corresponds to the results of the multiclass classifiers, which also usually performed better on eating than drinking. This implies that, at least for our dataset, drinking sounds are inherently more difficult to classify than eating sounds.
-Because the results for eating were on average comparable to the multiclass classifiers, the results for drinking were consistently worse and there had already been a lot of work put in to the multiclass models, we decided not to pursue the binary models any further as a final product.
+We decided not to pursue the binary models any further as a final product, because the results for eating were on average comparable to the multiclass classifiers, the results for drinking were consistently worse and there had already been a lot of work put in to the multiclass models.
 
+Reflection:
+I think I explored the option of using binary models extensively. I am happy, that I was able to make the results of these models almost as good as the multiclass classifiers. I personally wish, we continued working on the binary classifiers more, but I understand the decision of the group and agree, that this was the best course of action at the time.
+
+Other contributions:
 
 I experimented with several different models (mainly neural networks). The goal of these experiments was mostly to further my own understanding of how to make a model.
 [nog een zinnetje erbij]
@@ -61,18 +92,23 @@ Data exploration consisted of several different actions: looking at the amount o
 I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts]
 
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.
-A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
+A more detailed description of my contribution to the paper can be found further on in this document in part 7.2 Writing paper.
 
 ## 2.2 Reflection on own learning objectives
 Learning Objective: Acquire data science skills/knowledge
+
 Situation:
 I was interested in data science, but had little knowledge and skills on the subject.
+
 Task:
 Expand my knowledge on the subject and improve my skills.
+
 Action:
-Read many articles online, researching the best methods to tackle the problems I encountered. Attend lectures about the subjects. Speak with teachers and peers. Practice relevant programming exercises (e.g. DataCamp, notebooks). Work on the assignment give to me by the problem owner (identifying eating and drinking sounds from audio using machine/deep learning)
+Read many articles online, researching the best methods to tackle the problems I encountered. Attend lectures about the subjects. Speak with teachers and peers. Practice relevant programming exercises (e.g. DataCamp, notebooks). Work on the assignment given to me by the problem owner (identifying eating and drinking sounds from audio using machine/deep learning)
+
 Result:
 After reading articles, looking at examples of how other research groups attempted to solve similar problems, I learned not only how to program a neural network that can recognise specific sounds, but also how to structure such a project and after attempting several things myself and with other members of my group, I also learned what things to try and where to put priorities.
+
 Reflection:
 I think if I were to start another similar project, I would have a much easier time, due to the skills I have acquired in the last few months.
 I am satisfied with the amount I have learned. I have contributed at least in part on every aspect of the final product and understand not only which choices were made, but also why they were made.
