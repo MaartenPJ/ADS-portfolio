@@ -1,7 +1,7 @@
 # ADS-portfolio Maarten de Jonge 
 ## Student number 17113571
 
-# DataCamp Course
+# 1 DataCamp Course
 From the DataCamp Courses, I completed the following:
 -
 -
@@ -9,8 +9,8 @@ From the DataCamp Courses, I completed the following:
 
 Screenshots of the statements of accomplishment can be found here [#insert link]
 
-# Reflection and Evaluation
-## own contribution
+# 2 Reflection and Evaluation
+## 2.1 Reflection on own contribution to the project
 several chapters in the paper\
 several presentations\
 research feature engineering audio files\
@@ -63,7 +63,7 @@ I wrote some scripts to visualise audio in several different forms (waveform, ff
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.
 A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
-## learning objectives
+## 2.2 Reflection on own learning objectives
 Learning Objective: Acquire data science skills/knowledge
 Situation:
 I was interested in data science, but had little knowledge and skills on the subject.
@@ -109,7 +109,7 @@ I experienced the teamwork as pleasant during almost every part of the minor. I 
 I think I can use the experiences from this team to my benefit in any future teams I will be a part of.
 
 
-## Evaluation on the group project as a whole
+## 2.3 Evaluation on the group project as a whole
 At the start 3 people didnt show up, then 2 of those did, then 1 left, then another left.
 Only half the intended group size.
 Teachers advised us to prioritise due to this and not try to explore every possible avenue.
@@ -130,7 +130,7 @@ Task:
 
 
 
-# Research Project
+# 3 Research Project
 ## task definition
 Our group was one of three to work for the Smart Teddy Project under supervision of Hani Al-Ers. This project aims to help in the care of elders with beginning cases of dementia by introducing a teddy bear in their home that uses sensors to monitor their quality of life.
 Our group, "Team Nourish", was tasked with finding an algorithm that can distinguish eating (and less importantly drinking) sounds from ambient/background/other sounds around the house.
@@ -171,14 +171,14 @@ Although the aim was to use Scrum for everything related to the project, sometim
 [insert link to scrum board]
 
 
-# Predictive analytics
+# 4 Predictive analytics
 ## selecting model
 ## configuring model
 ## training model
 ## evaluating model
 ## visualising outcome model
 
-# Domain Knowledge
+# 5 Domain Knowledge
 ## intro subject field
 ## literature research
 [link to file containing many links about data science and stuff]
@@ -210,7 +210,7 @@ crossentropy
 
 
 
-# Data Preprocessing
+# 6 Data Preprocessing
 ## data exploration
 [Find and reference all python files/notebooks used for data visualisation]
 [describe how you explored the data]
@@ -244,7 +244,7 @@ The visualisations were done mostly using [libraries] MatPlotLib, Librosa and To
 
 
 
-# Communication
+# 7 Communication
 ## presentations
 I presented 3 internal presentations, of which 1 alone and 2 with another member of the group.
 I also presented 2 external presentations, of which 1 alone and 1 with another group member.
