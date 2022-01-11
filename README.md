@@ -10,7 +10,7 @@ From the DataCamp Courses, I completed the following:
 Screenshots of the statements of accomplishment can be found here [#insert link]
 
 # Reflection and Evaluation
-- own contribution
+## own contribution
 several chapters in the paper\
 several presentations\
 research feature engineering audio files\
@@ -63,7 +63,7 @@ I wrote some scripts to visualise audio in several different forms (waveform, ff
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.
 A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
-- learning objectives
+## learning objectives
 Learning Objective: Acquire data science skills/knowledge
 Situation:
 I was interested in data science, but had little knowledge and skills on the subject.
@@ -109,7 +109,7 @@ I experienced the teamwork as pleasant during almost every part of the minor. I 
 I think I can use the experiences from this team to my benefit in any future teams I will be a part of.
 
 
-- group project as a whole
+## Evaluation on the group project as a whole
 At the start 3 people didnt show up, then 2 of those did, then 1 left, then another left.
 Only half the intended group size.
 Teachers advised us to prioritise due to this and not try to explore every possible avenue.
@@ -131,14 +131,14 @@ Task:
 
 
 # Research Project
-- task definition
+## task definition
 Our group was one of three to work for the Smart Teddy Project under supervision of Hani Al-Ers. This project aims to help in the care of elders with beginning cases of dementia by introducing a teddy bear in their home that uses sensors to monitor their quality of life.
 Our group, "Team Nourish", was tasked with finding an algorithm that can distinguish eating (and less importantly drinking) sounds from ambient/background/other sounds around the house.
 Our chosen research question was "Which deep learning model is optimal to detect eating and drinking sounds from audio?"
 Furthermore, after talking with the problem owner, we decided to define "optimal" as a high accuracy score, but with a secondary emphasis on precision. This is because the problem owner would rather have the teddy bear miss a meal and have a caretaker check up an additional time (False Negative), than the teddy reporting meals that didn't happen, potentially resulting in a malnourished senior.
 The reason accuracy was chosen as the main metric despite the problem owner's wish for high precision, was that focussing on accuracy during training resulted in a better overview of the models. We also checked if it negatively impacted the precision scores, but the difference in precision scores was negligible.
 
-- evaluation
+## evaluation
 In future studies about this problem, I would advise more research into applying binary classifiers. Our group decided to focus on multiclass classifiers after initial experimentation in both binary and multiclass classifiers. This would have the teddy need only a single model instead of two. 
 Later in the project, however, we decided to revisit the binary classifier idea. The resulting models were quite promising and certain binary classifiers even outperformed their multiclass classifier equivalents in certain specific metrics.
 
@@ -150,22 +150,19 @@ I would recommend a new dataset also include eating-related sounds like cutlery 
 Additionally a dataset collected from the teddy bear itself would of course give a more representative result than a selection of Youtube-clips. Creating such a dataset would require a lot of manual labour in accurately labeling the samples, especially if the dataset is to be of significant size.
 [insert more recommendations here]
 
-- conclusions
+## conclusions
 The research question was “Which deep learning model is optimal to detect eating and drinking sounds from audio?”
 The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 linear layers. 
 To reach this conclusion, there were several decisions to be made. 
 First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of the "Own contribution" chapter, we decided that deep learning would work better for this problem.
-After we decided on using neural networks, there were several, partly codependant, questions that needed to be answered next. These questions include how many layers, how many nodes per layer, whether to include convolution steps, what learning rate and batch size to use, etc. 
+After we decided on using neural networks, there were several, partly codependant, questions that needed to be answered next. These questions were, among others, how many layers, how many nodes per layer, whether to include convolution steps, what learning rate and batch size to use.
 Adding convolutional layers to the model turned out to improve performance regardless of the other (hyper)parameters, so deciding it should be a CNN was an easy choice. (The best performing strictly linear model had an accuracy of 66,4%. Almost all models with convolutional layers had an accuracy above 70%)
 The number of both convolutional and linear layers was varied and the result was that a CNN with 2 convolutional layers followed by 3 linear layers seemed to perform most optimally. This was the model with the best performance for both eating and drinking sounds.
 Later, we used transfer learning with ResNet models to try to make a better model. While these models produced scores in certain epochs, that exceeded our best "self-made" CNN's, looking at the accuracy and loss plotted against epochs made us believe this was a fluke. The best epoch, with an accuracy score of 83,6%, was followed immediately by an epoch with an accuracy score of 24,4%, for example. The relevant accuracy plot can be seen here [link] and as figure 6 in the paper.
+These huge inconsistencies led us to discount the ResNet models as candidates for an "optimal model".
 
 
-[more here]
-Unfortunately our best individual result was with a ResNet transfer learning model, but due to the incredible fluctuations between epochs on all these models, we could not confidently recommend any of these models as the optimal model. We concluded, that the ResNet models we trained were too unreliable.
-[more here]
-
-- planning
+## planning
 Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with over a hundred [echte aantal] total tickets.
 At several moments during the minor, I sensed a lull was coming up [phrasing, manmanman] due to some group members not knowing their tasks. In several of these moments, I called for an extra meeting to discuss our plans for the rest of the minor.
 Our planning being agile due to scrum caused the group to deviate from these plans several times, but the overview of current tasks was appreciated by all group members.
@@ -175,18 +172,18 @@ Although the aim was to use Scrum for everything related to the project, sometim
 
 
 # Predictive analytics
-- selecting model
-- configuring model
-- training model
-- evaluating model
-- visualising outcome model
+## selecting model
+## configuring model
+## training model
+## evaluating model
+## visualising outcome model
 
 # Domain Knowledge
-- intro subject field
-- literature research
+## intro subject field
+## literature research
 [link to file containing many links about data science and stuff]
 
-- explanation of terminology, jargon, definitions
+## explanation of terminology, jargon, definitions
 [Collect a list of words and explain them I guess]
 Machine Learning
 Deep Learning
@@ -214,28 +211,28 @@ crossentropy
 
 
 # Data Preprocessing
-- data exploration
+## data exploration
 [Find and reference all python files/notebooks used for data visualisation]
 [describe how you explored the data]
 [describe early hypotheses]
 In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds (recognisable and comparable bands in spectrograms)[insert references to a spectrogram with these bands]. This strengthened our confidence, that our assignment [recognising these sounds] was indeed possible.
 
-- data cleansing
+## data cleansing
 The data was not cleaned, because we were not certain what we were looking for, so passing it through for example a low-pass noise reduction filter could remove the relevant identifiers the models should be looking for.
 Furthermore, the Google Audioset contained mostly samples that had very little static/noise, so reducing this was not nescessary.
 Later, during data enhancement, more background noises were even added to make the samples more like a realistic recording from the teddy bear.
 
-- data preparation
+## data preparation
 After the initial exploration of the dataset, we noticed the positive samples for both eating and drinking made up only a small percentage of the dataset. We decided to enlarge the amount of samples using data augmentation. To ensure the models would train on the data, not the augmentations, the same enhancements were performed on the negative samples.
 This work was largely done by Florian, with me providing help where asked.
 
 
-- data explanation
+## data explanation
 The dataset consists of audio files taken from Google databases (mostly YouTube). Since most of these files were at a length of approximately 10 seconds, all files were made to be exactly 10 seconds long.
 The name of the dataset used is Google AudioSet. [insert link to audioset] It contains millions of snippets of audio labeled with a description of their contents. These labels include things like vacuuming, breathing, [insert labels here], but most relevantly chewing and drinking. 
 
 
-- data visualisation
+## data visualisation
 In order to better understand the nature of our datasets, several types of data visualisation were employed, losted below with example scripts.
 To understand the dataset as a whole, we made:
 Histogram of labels [link]
@@ -248,11 +245,11 @@ The visualisations were done mostly using [libraries] MatPlotLib, Librosa and To
 
 
 # Communication
-- presentations
+## presentations
 I presented 3 internal presentations, of which 1 alone and 2 with another member of the group.
 I also presented 2 external presentations, of which 1 alone and 1 with another group member.
 
-- paper
+## paper
 I, together with lucas, laid down the structure for the paper.
 In the paper I contributed in large part to the chapters ............
 I also helped the other members of my team with questions about scientific writing and 
