@@ -27,7 +27,7 @@ Vast nog wel iets [ja wat dan]
 
 
 Early on in the minor, my task was researching which machine learning algorithms could be used on audio recognition, how to use them and what was common practice in the field of data science. For most machine learning (not deep learning) algoritms it is nescessary to identify and engineer features for the model to use in training. 
-After reading several articles, papers, websites, etc. I found no information on extracting features from eating sounds. Most instead opted for deep learning. 
+After reading several articles, papers, websites, etc. [links to articles?] I found no information on extracting features from eating sounds. Most instead opted for deep learning. 
 After this, I made some visualisations of the data (waveform and spectrogram) and could not distinguish any clear commonalities between different positive samples.
 I then decided that we should first try a neural network.
 When I talked to the other groups using audio (emotions and dialogue), I heard that they were able to use spectrograms and MFCC's to create identifying features for different people/emotions. In one of the weekly meetings, one of the teachers also said MFCC's might help solve this problem.
@@ -47,7 +47,7 @@ Because the results for eating were on average comparable to the multiclass clas
 
 
 I experimented with several different models (mainly neural networks). The goal of these experiments was mostly to further my own understanding of how to make a model.
-[These models scored slightly lower than another model that one of my group members made around the same time, so it was decided not to continue working on this version.]
+[nog een zinnetje erbij]
 
 
 At several occasions while working together, a group member complained about a bug in their code or some other problem. Most of these times, I was able to help fix or lessen the problem quickly.
@@ -60,7 +60,7 @@ Data exploration consisted of several different actions: looking at the amount o
 
 I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts]
 
-I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. 
+I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.
 A more detailed description of my contribution to the paper can be found further on in this document in the part Communication - writing paper.
 
 - learning objectives
@@ -96,7 +96,7 @@ I will certainly have use of my acquired skills in further study and my later jo
 
 Learning Objective: Working in a team
 Situation:
-This minor required me to work in an international, multidisciplinary team to work on the project. I have worked in several different teams in the past with varying levels of efficiency and cooperation.
+This minor required me to work in an international, multidisciplinary team to finish a project. I have worked in several different teams in the past with varying levels of efficiency and cooperation.
 Task:
 From the start of the minor, I was determined to try to take an active role in ensuring the tasks were planned ahead properly and the work was divided equally among the members of the group.
 Action:
@@ -136,16 +136,31 @@ Our group was one of three to work for the Smart Teddy Project under supervision
 Our group, "Team Nourish", was tasked with finding an algorithm that can distinguish eating (and less importantly drinking) sounds from ambient/background/other sounds around the house.
 Our chosen research question was "Which deep learning model is optimal to detect eating and drinking sounds from audio?"
 Furthermore, after talking with the problem owner, we decided to define "optimal" as a high accuracy score, but with a secondary emphasis on precision. This is because the problem owner would rather have the teddy bear miss a meal and have a caretaker check up an additional time (False Negative), than the teddy reporting meals that didn't happen, potentially resulting in a malnourished senior.
-The reason accuracy was chosen as the leading metric despite the wish for high precision, was that focussing on accuracy during training resulted in a better overall model.
+The reason accuracy was chosen as the main metric despite the problem owner's wish for high precision, was that focussing on accuracy during training resulted in a better overview of the models. We also checked if it negatively impacted the precision scores, but the difference in precision scores was negligible.
 
 - evaluation
 In future studies about this problem, I would advise more research into applying binary classifiers. Our group decided to focus on multiclass classifiers after initial experimentation in both binary and multiclass classifiers. This would have the teddy need only a single model instead of two. 
 Later in the project, however, we decided to revisit the binary classifier idea. The resulting models were quite promising and certain binary classifiers even outperformed their multiclass classifier equivalents in certain specific metrics.
-[We unfortunately didn't have enough time to spend on this avenue until the very end of the project, due to the fact that we only had half of our initial group for most of the project.]
+
 I recommend taking several different splits between training/validation/test sets to see if the results are not caused by unrepresentative data in the test set.
+
+In hindsight, I would have liked to try varying the hyperparameters more. Especially with the ResNet models. These models all fluctuated greatly, which according to the lectures could be a sign of a value for learning rate which is too high. We optimised the learning rate for our own CNN's and used this value for the transfer learning models as well, which might not have been the optimal value for the different models.
+
+I would recommend a new dataset also include eating-related sounds like cutlery on a plate, instead of only chewing and mastication sounds. This will provide additional signifying markers, that a CNN could recognise as eating.
+Additionally a dataset collected from the teddy bear itself would of course give a more representative result than a selection of Youtube-clips. Creating such a dataset would require a lot of manual labour in accurately labeling the samples, especially if the dataset is to be of significant size.
 [insert more recommendations here]
 
 - conclusions
+The research question was “Which deep learning model is optimal to detect eating and drinking sounds from audio?”
+The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 linear layers. 
+To reach this conclusion, there were several decisions to be made. 
+First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of the "Own contribution" chapter, we decided that deep learning would work better for this problem.
+After we decided on using neural networks, there were several, partly codependant, questions that needed to be answered next. These questions include how many layers, how many nodes per layer, whether to include convolution steps, what learning rate and batch size to use, etc. 
+Adding convolutional layers to the model turned out to improve performance regardless of the other (hyper)parameters, so deciding it should be a CNN was an easy choice. (The best performing strictly linear model had an accuracy of 66,4%. Almost all models with convolutional layers had an accuracy above 70%)
+The number of both convolutional and linear layers was varied and the result was that a CNN with 2 convolutional layers followed by 3 linear layers seemed to perform most optimally. This was the model with the best performance for both eating and drinking sounds.
+Later, we used transfer learning with ResNet models to try to make a better model. While these models produced scores in certain epochs, that exceeded our best "self-made" CNN's, looking at the accuracy and loss plotted against epochs made us believe this was a fluke. The best epoch, with an accuracy score of 83,6%, was followed immediately by an epoch with an accuracy score of 24,4%, for example. The relevant accuracy plot can be seen here [link] and as figure 6 in the paper.
+
+
 [more here]
 Unfortunately our best individual result was with a ResNet transfer learning model, but due to the incredible fluctuations between epochs on all these models, we could not confidently recommend any of these models as the optimal model. We concluded, that the ResNet models we trained were too unreliable.
 [more here]
