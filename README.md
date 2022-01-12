@@ -57,7 +57,7 @@ The fact that recognising drinking performed the worst out of the binary models 
 We decided not to pursue the binary models any further as a final product, because the results for eating were on average comparable to the multiclass classifiers, the results for drinking were consistently worse and there had already been a lot of work put in to the multiclass models.
 
 Reflection:\
-I think I explored the option of using binary models extensively. I am happy, that I was able to make the results of these models almost as good as the multiclass classifiers. I personally wish, we continued working on the binary classifiers more, but I understand the decision of the group and agree, that this was the best course of action at the time.\
+I think I explored the option of using binary models extensively. I am happy, that I was able to make the results of these models almost as good as the multiclass classifiers. I personally wish, we continued working on the binary classifiers more, but I understand the decision of the group and agree, that this was the best course of action at the time.
 
 Other contributions:\
 I experimented with several different models (mainly neural networks). The goal of these experiments was mostly to further my own understanding of how to make a model.\
