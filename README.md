@@ -212,10 +212,23 @@ Although the aim was to use Scrum for everything related to the project, sometim
 
 # 4 Predictive analytics
 ## 4.1 Selecting a model
+The final model is a Convolutional Neural Network with 2 convolutional layers and 3 linear layers, aside from the input and output layers, of course. The choice for a CNN was made very early on in the minor, since our research online into how to perform audio classification resulted almost exclusively in articles recommending using a CNN to do this.
+Some of these articles are [links to articles that also use CNN for audio].
+We did try neural networks without convolution as well, to verify a CNN was the best option, but these performed significantly worse on our data. [graph?]
+
+
 ## 4.2 Configuring a model
+The exact shape of the CNN was decided experimentally, as is described [here].
+The amount of 2 convolutional layers was ideal, because the accuracy, precision and recall scores were better, than with 0 or 1 convolutional layers. More than 2 convolutional layers led to more overfitting.
+The 
+
 ## 4.3 Training a model
+
+Batch size 64 was chosen after trying several powers of 2, because it generated better scores than 32 and 16 and overfitted less than higher values.
+
 ## 4.4 Evaluating a model
 ## 4.5 Visualising the outcome of a model (exploratory)
+The model is 
 
 # 5 Domain Knowledge
 ## 5.1 Introduction of the subject field
