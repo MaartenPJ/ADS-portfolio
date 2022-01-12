@@ -11,20 +11,6 @@ Screenshots of the statements of accomplishment can be found here [#insert link]
 
 # 2 Reflection and Evaluation
 ## 2.1 Reflection on own contribution to the project
-several chapters in the paper\
-several presentations\
-research feature engineering audio files\
-binary models\
-several linear and convolutional NN's (eventually unused)\
-Meetings and (good) ideas\
-Research\
-Data exploration\
-Data preparationX
-Data visualisation\
-big picture planning of the minor\
-solving bugs or other issues whenever asked\
-Vast nog wel iets [ja wat dan]
-
 Exploring machine learning for classifying audio data:\
 Situation:\
 A model needed to be chosen.
