@@ -89,7 +89,8 @@ Data exploration consisted of several different actions: looking at the amount o
 I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts]
 
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.\
-A more detailed description of my contribution to the paper can be found further on in this document in part 7.2 Writing paper.
+I got compliments on my fluency and from feedback during meetings, I think I got the information across in a comprehensible way.\
+A more detailed description of my contribution to the paper can be found further on in this document in part 7.2 Writing paper.[link]
 
 ## 2.2 Reflection on own learning objectives
 Learning Objective: Acquire data science skills/knowledge\
@@ -109,7 +110,6 @@ Reflection:\
 I think if I were to start another similar project, I would have a much easier time, due to the skills I have acquired in the last few months.\
 I am satisfied with the amount I have learned. I have contributed at least in part on every aspect of the final product and understand not only which choices were made, but also why they were made.\
 However, over the course of the minor I have been hindered several times by health-related issues. If this hadn't been the case, I would have liked to play and experiment with the subject matter more, instead of only doing what was required of me.
-
 
 Learning Objective: Improving (Python) programming skills\
 Situation:\
@@ -186,13 +186,13 @@ In hindsight, I would have liked to try varying the hyperparameters more. Especi
 
 I would recommend a new dataset also include eating-related sounds like cutlery on a plate, instead of only chewing and mastication sounds. This will provide additional signifying markers, that a CNN could recognise as eating.\
 Additionally a dataset collected from the teddy bear itself would of course give a more representative result than a selection of Youtube-clips. Creating such a dataset would require a lot of manual labour in accurately labeling the samples, especially if the dataset is to be of significant size.
-[insert more recommendations here]
 
 ## 3.3 Conclusions
 The research question was “Which deep learning model is optimal to detect eating and drinking sounds from audio?”\
-The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 linear layers.\
-To reach this conclusion, there were several decisions to be made. \
-First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of the "Own contribution" chapter, we decided that deep learning would work better for this problem.\
+The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 linear layers.
+
+To reach this conclusion, there were several decisions to be made.\
+First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of the "Own contribution" chapter [link], we decided that deep learning would work better for this problem.\
 After we decided on using neural networks, there were several, partly codependant, questions that needed to be answered next. These questions were, among others, how many layers, how many nodes per layer, whether to include convolution steps, what learning rate and batch size to use.\
 Adding convolutional layers to the model turned out to improve performance regardless of the other (hyper)parameters, so deciding it should be a CNN was an easy choice. (The best performing strictly linear model had an accuracy of 66,4%. Almost all models with convolutional layers had an accuracy above 70%)\
 The number of both convolutional and linear layers was varied and the result was that a CNN with 2 convolutional layers followed by 3 linear layers seemed to perform most optimally. This was the model with the best performance for both eating and drinking sounds.\
@@ -201,8 +201,9 @@ These huge inconsistencies led us to discount the ResNet models as candidates fo
 
 
 ## 3.4 Planning
-Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with over a hundred [echte aantal] total tickets.\
-At several moments during the minor, I sensed a lull was coming up [phrasing, manmanman] due to some group members not knowing their tasks. In several of these moments, I called for an extra meeting to discuss our plans for the rest of the minor.\
+Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with 95 total tickets.\
+We decided not to do the daily stand-up every day, but we did meet an average of 3 times per week to discuss progress.\
+At several moments during the minor, I thought things were not going smoothly. In these cases, I called for an extra meeting to discuss our plans for the rest of the sprint/minor.\
 Our planning being agile due to scrum caused the group to deviate from these plans several times, but the overview of current tasks was appreciated by all group members.\
 Although the aim was to use Scrum for everything related to the project, sometimes an issue was discussed and then quickly resolved, without it ever reaching the Jira board.
 
