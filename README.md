@@ -218,13 +218,18 @@ We did try neural networks without convolution as well, to verify a CNN was the 
 
 
 ## 4.2 Configuring a model
-The exact shape of the CNN was decided experimentally, as is described [here].
-The amount of 2 convolutional layers was ideal, because the accuracy, precision and recall scores were better, than with 0 or 1 convolutional layers. More than 2 convolutional layers led to more overfitting.
-The 
+The exact shape of the CNN was decided experimentally, as is described [here].\
+The amount of 2 convolutional layers was ideal, because the accuracy, precision and recall scores were better, than with 0 or 1 convolutional layers. More than 2 convolutional layers led to more overfitting.\
+The same argument holds for 3 hidden linear layers. This was the highest amount of linear layers we could add, without noticing significant overfitting in the training curves.
 
 ## 4.3 Training a model
+In training the first iterations of the model, we noticed the training and validation loss curves started diverging greatly after only a few epochs. This is a clear indication of overfitting. We theorised the most likely cause of this was that our model was too complex for the amount of data we had. To fix this, we tried several different things.\
+We reduced the amount of nodes per linear layer from 1000 down to 100 (a number which stayed until the end of the project).\
+We reduced the size of the samples fed to the models. We used a fixed-size mel spectrogram of 801 by 100 "pixels", instead of a full-resolution image. This increased the information density of our samples, reducing the chance of the model training on irrelevant patterns, like pixels that contain no data.\
+We used data augmentation to increase the amount of samples. Later we found a new, larger dataset, which we also augmented, further increasing our total amount of samples.
 
-Batch size 64 was chosen after trying several powers of 2, because it generated better scores than 32 and 16 and overfitted less than higher values.
+Batch size 64 was chosen after trying several powers of 2, because it generated better scores than 32 and 16 and overfitted less than higher values.\
+In our experiments, a learning rate of 0.001 was ideal for the CNN's. The training curves were quite smooth, but we are also pretty confident, that we reached the global optimum, because a greater learning rate never provided better results.
 
 ## 4.4 Evaluating a model
 ## 4.5 Visualising the outcome of a model (exploratory)
