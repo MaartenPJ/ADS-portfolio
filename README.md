@@ -11,6 +11,8 @@ Screenshots of the statements of accomplishment can be found here [#insert link]
 
 I decided not to do every course. Some covered topics I had already studied before the minor and some covered topics, that I had already researched and done myself for this minor. I did look at all the video's to make sure there was no important information, that I would miss.
 
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
+
 # 2 Reflection and Evaluation
 ## 2.1 Reflection on own contribution to the project
 Exploring machine learning for classifying audio data:\
@@ -153,7 +155,7 @@ Situation:
 As a part of his Smart Teddy project, 
 Task:
 
-
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
 
 # 3 Research Project
 [Our paper](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Paper/ResearchPaperNourish.pdf)\
@@ -182,7 +184,7 @@ The research question was “Which deep learning model is optimal to detect eati
 The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 layers.
 
 To reach this conclusion, there were several decisions to be made.\
-First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of the "Own contribution" chapter [link], we decided that deep learning would work better for this problem.\
+First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of [the "Own contribution" chapter](https://github.com/MaartenPJ/ADS-portfolio#21-reflection-on-own-contribution-to-the-project), we decided that deep learning would work better for this problem.\
 After we decided on using neural networks, there were several, partly codependant, questions that needed to be answered next. These questions were, among others, how many layers, how many nodes per layer, whether to include convolution steps, what learning rate and batch size to use.\
 Adding convolutional layers to the model turned out to improve performance regardless of the other hyperparameters, so deciding it should be a CNN was an easy choice. (The best performing strictly linear model had an accuracy of 66,4%. Almost all models with convolutional layers had an accuracy above 70%)\
 The number of both convolutional and linear layers was varied and the result was that a CNN with 2 convolutional layers followed by 3 linear layers seemed to perform most optimally. This was the model with the best performance for both eating and drinking sounds.\
@@ -197,6 +199,8 @@ Our planning being agile due to scrum caused the group to deviate from these pla
 Although the aim was to use Scrum for everything related to the project, sometimes an issue was discussed and then quickly resolved, without it ever reaching the Jira board.\
 [Link to Scrum/Jira board](https://teamnourish.atlassian.net/jira/software/projects/NOUR/boards/1).
 
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
+
 # 4 Predictive analytics
 ## 4.1 Selecting a model
 The final model is a Convolutional Neural Network with 2 convolutional layers and 3 linear layers, aside from the input and output layers, of course. The choice for a CNN was made very early on in the minor, since our research online into how to perform audio classification resulted almost exclusively in articles recommending using a CNN to do this.\
@@ -205,7 +209,7 @@ We did try neural networks without convolution as well, to verify a CNN was the 
 
 
 ## 4.2 Configuring a model
-The exact shape of the CNN was decided experimentally, as is described [here].\
+The exact shape of the CNN was decided experimentally.\
 The amount of 2 convolutional layers was ideal, because the accuracy, precision and recall scores were better, than with 0 or 1 convolutional layers. More than 2 convolutional layers led to more overfitting.\
 The same argument holds for 3 hidden linear layers. This was the highest amount of linear layers we could add, without noticing significant overfitting in the training curves.
 
@@ -222,37 +226,12 @@ In our experiments, a learning rate of 0.001 was ideal for the CNN's. The traini
 ## 4.5 Visualising the outcome of a model (exploratory)
 The model is 
 
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
+
 # 5 Domain Knowledge
-## 5.1 Introduction of the subject field
-## 5.2 Literature research
-[link to file containing many links about data science and stuff]
+I have decided not to do the chapter Domain Knowledge.
 
-## 5.3 Explanation of terminology, jargon and definitions
-[Collect a list of words and explain them I guess]
-Machine Learning
-Deep Learning
-Back propagation
-Features
-feature engineering
-epoch
-(validation) loss
-accuracy
-precision
-recall
-confusion matrix
-model
-dropout
-activation function
-linear layer
-convolution
-Neural Network
-overfitting
-underfitting
-regression
-forest
-crossentropy
-
-
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
 
 # 6 Data Preprocessing
 ## 6.1 Data exploration
@@ -286,7 +265,7 @@ Converting to MFCC [link]\
 Converting to (mel)spectrogram [link]\
 The visualisations were done mostly using [libraries] MatPlotLib, Librosa and TorchAudio and pandas was used for reading in data.
 
-
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
 
 # 7 Communication
 ## 7.1 Presentations
@@ -302,3 +281,5 @@ In the paper I wrote the chapters Introduction, Model evaluation, Conclusion, Re
 I also contributed to the chapter Dataset (Data augmentation).\
 I standardised the references (both to literature and to figures) and the formatting and performed the final spelling check.\
 I also helped the other members of my team with questions about scientific writing.
+
+[Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
