@@ -232,9 +232,12 @@ Batch size 64 was chosen after trying several powers of 2, because it generated 
 In our experiments, a learning rate of 0.001 was ideal for the CNN's. The training curves were quite smooth, but we are also pretty confident, that we reached the global optimum, because a greater learning rate never provided better results.
 
 ## 4.4 Evaluating a model
+I will evaluate a solely linear neural network. The accuracy graph of this model is seen [here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Linear%20NN%20acc.png).\
+This graph shows that both training and validation accuracy seem to plateau (albeit shakily) near the end of the graph. The shaky nature of the graph tells us, that the learning rate used was likely not ideal. The huge gap between training and validation accuracy tells us, that this model did not converge properly. It stopped at a maximum of 66% accuracy. This model does not have enough complexity.
 
 ## 4.5 Visualising the outcome of a model (exploratory)
-The model is 
+The outcome of the models was visualised in a table of numbers, a loss graph, an accuracy graph and a confusion matrix.
+An example of this is seen in these screenshots: [first](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Schermafbeelding%202022-01-13%20234200.png), [second](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Schermafbeelding%202022-01-13%20234217.png).
 
 [Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
 
