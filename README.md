@@ -50,8 +50,9 @@ Make binary classifiers, that are similar to the existing multiclass classifiers
 
 Action:\
 Alongside the multiclass classifier models, I used the same dataset (with the same train-test split) and similar techniques to create binary classifier models.\
-I made binary classifier models to distinguish eating vs not eating, drinking vs not drinking and eating and drinking vs neither. [insert links to notebooks]\
-To keep consistency between the binary and multiclass models, I used almost the same code as Florian to load in and label the data, replacing certain variables as nescessary.
+I made binary classifier models to distinguish eating vs not eating, drinking vs not drinking and eating and drinking vs neither.\
+To keep consistency between the binary and multiclass models, I used almost the same code as Florian to load in and label the data, replacing certain variables as nescessary.\
+The notebooks used are found [here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Binary%20model%20notebooks/Binary%20Models%20Drink-no.ipynb), [here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Binary%20model%20notebooks/Binary%20Models%20Eat-no.ipynb) and [here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Binary%20model%20notebooks/Binary%20Models%20EatDrink-no.ipynb)
 
 Results:\
 The binary models to distinguish only eating were comparable to the multiclass classifiers in terms of accuracy and comparable or sometimes slightly better in terms of precision. The binary models for only drinking performed consistently slightly worse than both the multiclass classifiers and the other binary models. The binary model to distinguish eating or drinking vs neither performed only slightly worse than the only eating binary classifier.\
