@@ -1,6 +1,15 @@
 # ADS-portfolio Maarten de Jonge 
 ## Student number 17113571
 
+[1. DataCamp](https://github.com/MaartenPJ/ADS-portfolio#1-datacamp-course)
+[2. Reflection and evaluation](https://github.com/MaartenPJ/ADS-portfolio#2-reflection-and-evaluation)
+[3. Research Project](https://github.com/MaartenPJ/ADS-portfolio#3-research-project)
+[4. Predictive Analytics](https://github.com/MaartenPJ/ADS-portfolio#4-predictive-analytics)
+[5. Domain knowledge (not done)](https://github.com/MaartenPJ/ADS-portfolio#5-domain-knowledge)
+[6. Data preprocessing](https://github.com/MaartenPJ/ADS-portfolio#6-data-preprocessing)
+[7. Communication](https://github.com/MaartenPJ/ADS-portfolio#7-communication)
+
+
 # 1 DataCamp Course
 From the DataCamp Courses, I completed the following:
 -
@@ -257,13 +266,10 @@ The name of the dataset used is [Google AudioSet](https://research.google.com/au
 
 ## 6.5 Data visualisation (exploratory)
 In order to better understand the nature of our datasets, several types of data visualisation were employed, losted below with example scripts.\
-To understand the dataset as a whole, we made:\
-Histogram of labels [link]\
-To get more insight into individual datapoints, the following transformations were performed\
-Converting to waveform [link]\
-Converting to MFCC [link]\
-Converting to (mel)spectrogram [link]\
-The visualisations were done mostly using [libraries] MatPlotLib, Librosa and TorchAudio and pandas was used for reading in data.
+To understand the dataset as a whole, we made a histogram of labels. I was unfortunately unable to find this. I suspect it was deleted from the server at some point.\
+To get more insight into individual datapoints, we made a waveform, an MFCC and a (mel)spectrogram of them.\
+I compiled several scripts used to visualise data into [this notebook](https://github.com/MaartenPJ/ADS-portfolio/blob/main/notebooks/Data%20Visualisation.ipynb).
+These visualisations were done mostly using the numpy, pandas, wave, MatPlotLib, librosa and soundfile libraries.
 
 [Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
 
