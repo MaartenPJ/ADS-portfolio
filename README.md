@@ -9,6 +9,8 @@ From the DataCamp Courses, I completed the following:
 
 Screenshots of the statements of accomplishment can be found here [#insert link]
 
+I decided not to do every course. Some covered topics I had already studied before the minor and some covered topics, that I had already researched and done myself for this minor. I did look at all the video's to make sure there was no important information, that I would miss.
+
 # 2 Reflection and Evaluation
 ## 2.1 Reflection on own contribution to the project
 Exploring machine learning for classifying audio data:\
@@ -175,7 +177,7 @@ Additionally a dataset collected from the teddy bear itself would of course give
 
 ## 3.3 Conclusions
 The research question was “Which deep learning model is optimal to detect eating and drinking sounds from audio?”\
-The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 linear layers.
+The answer to the question is a convolutional neural network with 2 convolutional layers followed by 3 layers.
 
 To reach this conclusion, there were several decisions to be made.\
 First we had to decide whether to use a machine learning or deep learning algorithm. As I discussed in more detail in the first paragraph of the "Own contribution" chapter [link], we decided that deep learning would work better for this problem.\
