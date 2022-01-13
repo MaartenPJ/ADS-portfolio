@@ -63,9 +63,7 @@ Reflection:\
 I think I explored the option of using binary models extensively. I am happy, that I was able to make the results of these models almost as good as the multiclass classifiers. I personally wish, we continued working on the binary classifiers more, but I understand the decision of the group and agree, that this was the best course of action at the time.
 
 Other contributions:\
-I experimented with several different models (mainly neural networks). The goal of these experiments was mostly to further my own understanding of how to make a model.\
-[nog een zinnetje erbij]
-
+I experimented with several different models (mainly neural networks). The goal of these experiments was mostly to further my own understanding of how to make a model, not nescessarily to further project itself.
 
 At several occasions while working together, a group member complained about a bug in their code or some other problem. Most of these times, I was able to help fix or lessen the problem quickly.\
 I played a part in the meetings the group had. These include internal meetings, meetings with teachers, meetings with the problem owner and meetings with other project groups.\
@@ -73,13 +71,13 @@ I took the lead at several times to ensure a good planning and equal division of
 
 I did research into several data science-related topics. A list of articles I read can be found here [insert link] \[Existing research on audio recognition and eating sounds in particular, general information on making/training/learning models]
 
-Data exploration consisted of several different actions: looking at the amount of samples, the distribution of labels among samples, listening to the individual audio fragments, creating waveforms and spectrograms of them, studying those images for patterns and/or irregularities, verifying that the samples were correctly labeled, etc. I performed several of these actions for each of the considered datasets. (Over all datasets combined, I performed all of these actions
+I performed data exploration. Data exploration consisted of several different actions: looking at the amount of samples, the distribution of labels among samples, listening to the individual audio fragments, creating waveforms and spectrograms of them, studying those images for patterns and/or irregularities, verifying that the samples were correctly labeled, etc. I performed several of these actions for each of the considered datasets. Over all datasets combined, I performed all of these actions.
 
 I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts]
 
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.\
 I got compliments on my fluency and from feedback during meetings, I think I got the information across in a comprehensible way.\
-A more detailed description of my contribution to the paper can be found further on in this document in part 7.2 Writing paper.[link]
+A more detailed description of my contribution to the paper can be found further on in this document in part [7.2 Writing paper](https://github.com/MaartenPJ/ADS-portfolio#72-writing-paper).
 
 ## 2.2 Reflection on own learning objectives
 Learning Objective: Acquire data science skills/knowledge\
@@ -158,6 +156,9 @@ Task:
 
 
 # 3 Research Project
+[Our paper](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Paper/ResearchPaperNourish.pdf)\
+[Notebook containing our final model](https://github.com/MaartenPJ/ADS-portfolio/blob/main/notebooks/cnn2-tuning.ipynb)
+
 ## 3.1 Task definition
 Our group was one of three to work for the Smart Teddy Project under supervision of Hani Al-Ers. This project aims to help in the care of elders with beginning cases of dementia by introducing a teddy bear in their home that uses sensors to monitor their quality of life.\
 Our group, "Team Nourish", was tasked with finding an algorithm that can distinguish eating (and less importantly drinking) sounds from ambient/background/other sounds around the house.\
@@ -188,22 +189,19 @@ The number of both convolutional and linear layers was varied and the result was
 Later, we used transfer learning with ResNet models to try to make a better model. While these models produced scores in certain epochs, that exceeded our best "self-made" CNN's, looking at the accuracy and loss plotted against epochs made us believe this was a fluke. The best epoch, with an accuracy score of 83,6%, was followed immediately by an epoch with an accuracy score of 24,4%, for example. The relevant accuracy plot can be seen here [link] and as figure 6 in the paper.\
 These huge inconsistencies led us to discount the ResNet models as candidates for an "optimal model".
 
-
 ## 3.4 Planning
 Our group has used Scrum in the planning of this project. We made a Scrum board on Jira and ended up with 95 total tickets.\
 We decided not to do the daily stand-up every day, but we did meet an average of 3 times per week to discuss progress.\
 At several moments during the minor, I thought things were not going smoothly. In these cases, I called for an extra meeting to discuss our plans for the rest of the sprint/minor.\
 Our planning being agile due to scrum caused the group to deviate from these plans several times, but the overview of current tasks was appreciated by all group members.\
-Although the aim was to use Scrum for everything related to the project, sometimes an issue was discussed and then quickly resolved, without it ever reaching the Jira board.
-
-[insert link to scrum board]
-
+Although the aim was to use Scrum for everything related to the project, sometimes an issue was discussed and then quickly resolved, without it ever reaching the Jira board.\
+[Link to Scrum/Jira board](https://teamnourish.atlassian.net/jira/software/projects/NOUR/boards/1).
 
 # 4 Predictive analytics
 ## 4.1 Selecting a model
-The final model is a Convolutional Neural Network with 2 convolutional layers and 3 linear layers, aside from the input and output layers, of course. The choice for a CNN was made very early on in the minor, since our research online into how to perform audio classification resulted almost exclusively in articles recommending using a CNN to do this.
-Some of these articles are [links to articles that also use CNN for audio].
-We did try neural networks without convolution as well, to verify a CNN was the best option, but these performed significantly worse on our data. [graph?]
+The final model is a Convolutional Neural Network with 2 convolutional layers and 3 linear layers, aside from the input and output layers, of course. The choice for a CNN was made very early on in the minor, since our research online into how to perform audio classification resulted almost exclusively in articles recommending using a CNN to do this.\
+Some of these articles are [links to articles that also use CNN for audio].\
+We did try neural networks without convolution as well, to verify a CNN was the best option, but these performed significantly worse on our data. This is clearly visible when comparing [the accuracy graph of the best linear NN](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Linear%20NN%20acc.png) to [the accuracy graph of the best CNN](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/CNN%20acc.png).
 
 
 ## 4.2 Configuring a model
@@ -261,7 +259,7 @@ crossentropy
 [Find and reference all python files/notebooks used for data visualisation]\
 [describe how you explored the data]\
 [describe early hypotheses]\
-In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds (recognisable and comparable bands in spectrograms)[insert references to a spectrogram with these bands]. This strengthened our confidence, that our assignment [recognising these sounds] was indeed possible.
+In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds, e.g. recognisable and comparable bands in spectrograms [as seen here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Drinking%20sound%20clear%20bands.png). The bands in this image correspond to 3 clear slurping sounds in the audio. Patterns like this strengthened our confidence, that our assignment to recognise these sounds was indeed achievable.
 
 ## 6.2 Data cleansing
 The data was not cleaned, because we were not certain what we were looking for, so passing it through for example a low-pass noise reduction filter could remove the relevant identifiers the models should be looking for.\
@@ -275,7 +273,7 @@ This work was largely done by Florian, with me providing help where asked.
 
 ## 6.4 Data explanation
 The dataset consists of audio files taken from Google databases (mostly YouTube). Since most of these files were at a length of approximately 10 seconds, all files were made to be exactly 10 seconds long.\
-The name of the dataset used is Google AudioSet. [insert link to audioset] It contains millions of snippets of audio labeled with a description of their contents. These labels include things like vacuuming, breathing, [insert labels here], but most relevantly chewing and drinking.
+The name of the dataset used is [Google AudioSet](https://research.google.com/audioset/). It contains millions of snippets of audio labeled with a description of their contents. These labels include things like vacuuming, breathing, several musical instruments, wind, clapping, knocking on door and silence, but most relevantly chewing and drinking.
 
 
 ## 6.5 Data visualisation (exploratory)
@@ -293,9 +291,14 @@ The visualisations were done mostly using [libraries] MatPlotLib, Librosa and To
 # 7 Communication
 ## 7.1 Presentations
 I presented 3 internal presentations, of which 1 alone and 2 with another member of the group.\
-I also presented 2 external presentations, of which 1 alone and 1 with another group member.
+I also presented 2 external presentations, of which 1 alone and 1 with another group member.\
+Here are two examples of presentations I gave: [an external presentation](https://github.com/MaartenPJ/ADS-portfolio/blob/main/presentations/External%20Presentation%2010_12.pptx) and [an internal presentation](https://github.com/MaartenPJ/ADS-portfolio/blob/main/presentations/Internal%20Presentation.pptx).\
+Most of the feedback I recieved regarding my presentations was positive. I alledgedly speak clearly and fluently in English and am quite good at getting the information across.
 
 ## 7.2 Writing paper
-I, together with lucas, laid down the structure for the paper.\
-In the paper I contributed in large part to the chapters ............\
-I also helped the other members of my team with questions about scientific writing and 
+The paper can be found [here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Paper/ResearchPaperNourish.pdf).\
+I, together with Lucas, laid down the structure for the paper.\
+In the paper I wrote the chapters Introduction, Model evaluation, Conclusion, Recommendations.\
+I also contributed to the chapter Dataset (Data augmentation).\
+I standardised the references (both to literature and to figures) and the formatting and performed the final spelling check.\
+I also helped the other members of my team with questions about scientific writing.
