@@ -12,11 +12,17 @@
 
 # 1 DataCamp Course
 From the DataCamp Courses, I completed the following:
--
--
--
+- Introduction to Python
+- Intermediate Python
+- Python Data Science Toolbox (Part 1)
+- Python Data Science Toolbox (Part 2)
+- Statistical Thinking in Python
+- Supervised Learning with scikit-learn
+- Introduction to Data Visualisation with Matplotlib
+- Machine Learning for Time Series Data in Python
+These are 8/16 courses or 50%
 
-Screenshots of the statements of accomplishment can be found here [#insert link]
+Screenshots of the statements of accomplishment can be found [here](https://github.com/MaartenPJ/ADS-portfolio/tree/main/DataCamp).
 
 I decided not to do every course. Some covered topics I had already studied before the minor and some covered topics, that I had already researched and done myself for this minor. I did look at all the video's to make sure there was no important information, that I would miss.
 
@@ -33,7 +39,7 @@ Early on in the minor, my task was researching which machine learning algorithms
 
 Action:\
 For most machine learning (not deep learning) algoritms it is nescessary to identify and engineer features for the model to use in training.\
-After reading several articles, papers and websites. [links to articles?] I found no information on extracting features from eating sounds. Most instead opted for deep learning. \
+After reading several articles, papers and websites(see [literature list](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Literature%20List%20Portfolio.docx)), I found no information on extracting features from eating sounds. Most instead opted for deep learning. \
 After this, I made some visualisations of the data (waveform and spectrogram) and could not distinguish any clear commonalities between different positive samples.\
 I then decided that we should first try a neural network.\
 I talked to the other groups using audio (emotions and dialogue). I heard that they were able to use spectrograms and MFCC's to create identifying features for different people/emotions. In one of the weekly meetings, one of the teachers also said MFCC's might help solve this problem.\
@@ -80,11 +86,11 @@ At several occasions while working together, a group member complained about a b
 I played a part in the meetings the group had. These include internal meetings, meetings with teachers, meetings with the problem owner and meetings with other project groups.\
 I took the lead at several times to ensure a good planning and equal division of tasks for all members of the group.
 
-I did research into several data science-related topics. A list of articles I read can be found here [insert link] \[Existing research on audio recognition and eating sounds in particular, general information on making/training/learning models]
+I did research into several data science-related topics. A list of articles I read can be found [here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Literature%20List%20Portfolio.docx). This list is, unfortunately, not comprehensive. \
 
 I performed data exploration. Data exploration consisted of several different actions: looking at the amount of samples, the distribution of labels among samples, listening to the individual audio fragments, creating waveforms and spectrograms of them, studying those images for patterns and/or irregularities, verifying that the samples were correctly labeled, etc. I performed several of these actions for each of the considered datasets. Over all datasets combined, I performed all of these actions.
 
-I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts]
+I wrote some scripts to visualise audio in several different forms (waveform, fft, (regular) spectrogram, mel spectrogram, MFCC) [link to scripts](https://github.com/MaartenPJ/ADS-portfolio/blob/main/notebooks/Data%20Visualisation.ipynb)
 
 I wrote a significant part of the final paper and I presented (parts of) 5 presentations. 2 external and 3 internal presentations. I also took part in creating most powerpoints, as we usually created those in a meeting with the whole group.\
 I got compliments on my fluency and from feedback during meetings, I think I got the information across in a comprehensible way.\
@@ -127,7 +133,20 @@ Reflection:\
 I am happy to see, that, even though I had not done too much programming in the past few years, I quickly got into the programming mindset. I programmed several different types of scripts/programs and was able to learn new skills rather quickly. This also allowed me to help the other members in my team with troubleshooting errors and bugs (even the computer science students).\
 I will certainly have use of my acquired skills in further study and my later job.
 
-Learning Objective: Working in a team\
+
+## 2.3 Evaluation on the group project as a whole
+In the first 8 weeks of the minor, the amount of people in the group changed 3 times.\
+Afterwards, we were left with only half the intended group size.\
+Teachers advised us to prioritise due to this and not try to explore every possible avenue.\
+The first few weeks consisted of a lot of individual working without much collaborating or vision of the goal.
+
+After several weeks, the group started meeting and discussing more in-depth and efficiently.\
+We communicated more about new discoveries and insights and changes in plans. This lead to a pleasant working environment.\
+The communication was very open throughout the minor.\
+Even though all group members came from different countries, there were little to no language-related barriers in communication.
+
+I am satisfied with the results of the project. The final model is not perfect, but likely good enough for the purposes of the problem owner. Also I believe it is the best we could have done considering the assignment and the fact there were only 3 people for most of the project.
+
 Situation:\
 This minor required me to work in an international, multidisciplinary team to finish a project. I have worked in several different teams in the past with varying levels of efficiency and cooperation.
 
@@ -144,25 +163,6 @@ The team finished every task in time and almost every major decision was first d
 Reflection:\
 I experienced the teamwork as pleasant during almost every part of the minor. I took an active role in the discussions whenever I thought my input would be relevant, but also tried not to come off as too dominant a person.\
 I think I can use the experiences from this team to my benefit in any future teams I will be a part of.
-
-## 2.3 Evaluation on the group project as a whole
-In the first 8 weeks of the minor, the amount of people in the group changed 3 times.\
-Afterwards, we were left with only half the intended group size.\
-Teachers advised us to prioritise due to this and not try to explore every possible avenue.\
-First few weeks lot of individual working without much collaborating or vision of the goal.
-
-After several weeks, the group started meeting and discussing more in-depth and efficiently.\
-We communicated more about new discoveries and insights and changes in plans. This lead to a pleasant working environment.\
-The communication was very open throughout the minor.\
-Even though all group members came from different countries, there were little to no language-related barriers in communication.
-
-I am satisfied with the results of the project. The final model is not perfect, but likely good enough for the purposes of the problem owner. Also I believe it is the best we could have done considering the assignment and the fact there were only 3 people for most of the project.
-
-[talk more about my role in all this maybe?]
-
-Situation:
-As a part of his Smart Teddy project, 
-Task:
 
 [Back to top](https://github.com/MaartenPJ/ADS-portfolio#ads-portfolio-maarten-de-jonge)
 
@@ -213,7 +213,7 @@ Although the aim was to use Scrum for everything related to the project, sometim
 # 4 Predictive analytics
 ## 4.1 Selecting a model
 The final model is a Convolutional Neural Network with 2 convolutional layers and 3 linear layers, aside from the input and output layers, of course. The choice for a CNN was made very early on in the minor, since our research online into how to perform audio classification resulted almost exclusively in articles recommending using a CNN to do this.\
-Some of these articles are [links to articles that also use CNN for audio].\
+Some of these articles are separated out at the bottom of [the literature list](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Literature%20List%20Portfolio.docx).\
 We did try neural networks without convolution as well, to verify a CNN was the best option, but these performed significantly worse on our data. This is clearly visible when comparing [the accuracy graph of the best linear NN](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Linear%20NN%20acc.png) to [the accuracy graph of the best CNN](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/CNN%20acc.png).
 
 
@@ -232,6 +232,7 @@ Batch size 64 was chosen after trying several powers of 2, because it generated 
 In our experiments, a learning rate of 0.001 was ideal for the CNN's. The training curves were quite smooth, but we are also pretty confident, that we reached the global optimum, because a greater learning rate never provided better results.
 
 ## 4.4 Evaluating a model
+
 ## 4.5 Visualising the outcome of a model (exploratory)
 The model is 
 
@@ -244,10 +245,11 @@ I have decided not to do the chapter Domain Knowledge.
 
 # 6 Data Preprocessing
 ## 6.1 Data exploration
-[Find and reference all python files/notebooks used for data visualisation]\
-[describe how you explored the data]\
-[describe early hypotheses]\
-In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds, e.g. recognisable and comparable bands in spectrograms [as seen here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Drinking%20sound%20clear%20bands.png). The bands in this image correspond to 3 clear slurping sounds in the audio. Patterns like this strengthened our confidence, that our assignment to recognise these sounds was indeed achievable.
+In the beginning, the research question was a different one, namely "Is it possible to detect eating and drinking sounds from audio using machine/deep learning?" Early Data exploration of the new/final dataset revealed very clear patterns in several of the eating and drinking sounds, e.g. recognisable and comparable bands in spectrograms [as seen here](https://github.com/MaartenPJ/ADS-portfolio/blob/main/Images/Drinking%20sound%20clear%20bands.png). The bands in this image correspond to 3 clear slurping sounds in the audio. Patterns like this strengthened our confidence, and led to the hypothesis, that it was indeed possible using neural networks..\
+Further data exploration included plots and tables to explore the length of each file and the distribution of lengths and labels among samples in the dataset.\
+There were no clear outliers, as our data was not numerical in the traditional sense.
+
+Several examples of scripts for visualisations used in data exploration are collected in [this notebook](https://github.com/MaartenPJ/ADS-portfolio/blob/main/notebooks/Data%20Visualisation.ipynb)
 
 ## 6.2 Data cleansing
 The data was not cleaned, because we were not certain what we were looking for, so passing it through for example a low-pass noise reduction filter could remove the relevant identifiers the models should be looking for.\
@@ -265,7 +267,7 @@ The name of the dataset used is [Google AudioSet](https://research.google.com/au
 
 
 ## 6.5 Data visualisation (exploratory)
-In order to better understand the nature of our datasets, several types of data visualisation were employed, losted below with example scripts.\
+In order to better understand the nature of our datasets, several types of data visualisation were employed, listed below with scripts.\
 To understand the dataset as a whole, we made a histogram of labels. I was unfortunately unable to find this. I suspect it was deleted from the server at some point.\
 To get more insight into individual datapoints, we made a waveform, an MFCC and a (mel)spectrogram of them.\
 I compiled several scripts used to visualise data into [this notebook](https://github.com/MaartenPJ/ADS-portfolio/blob/main/notebooks/Data%20Visualisation.ipynb).
